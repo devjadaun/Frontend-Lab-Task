@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f0;
+    color: #333;
+}
+
+.Intro {
+    background-color: #e8e8e3;
+    padding: 60px 10%;
+}
+
+.Intro h1 {
+    margin-top: 0;
+}
+
+.name {
+    color: #555;
+    font-size: 35px;
+}
+
+section {
+    padding: 50px 10%;
+    background-color: #f5f5f0;
+}
+
+.bg {
+    background-color: #e8e8e3;
+}
+
+.Heading {
+    font-size: 32px;
+    color: #444;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #888;
+    padding-bottom: 10px;
+}
+
+.AboutPara {
+    max-width: 800px;
+    margin-bottom: 15px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.skillsP {
+    display: inline-block;
+    width: 28%;
+    min-width: 220px;
+    min-height: 150px;
+
+    background-color: #e0e0e0;
+
+    padding: 25px;
+    margin: 10px;
+
+    border-radius: 10px;
+    vertical-align: top;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+.skillsP h3 {
+    color: #444;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.skillsP p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.skillsP:hover {
+    transform: translateY(-5px);
+    background-color: #d0d0d0;
+}
+
+#education {
+    background-color: #e8e8e3;
+}
+
+#education h3 {
+    font-size: 24px;
+}
+
+#education p {
+    color: #555;
+}
+
+#contact {
+    background-color: #deded8;
+}
+
+#contact p {
+    font-size: 18px;
+}
+
+#contact a {
+    color: #444;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .Intro {
+        padding: 40px 7%;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 40px 7%;
+    }
+
+    .skillsP {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        margin: 15px 0;
+    }
+}

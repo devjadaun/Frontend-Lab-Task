@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f5f7, #f7f5f8);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: rgb(194, 34, 186);
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+table {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border-spacing: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+input {
+    width: 250px;
+    height: 65px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background: #f1f5f9;
+    color: #222;
+    font-size: 28px;
+    text-align: right;
+}
+
+button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+    background: #e2e8f0;
+    color: #334155;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #c4b5fd;
+    color: white;
+    transform: translateY(-3px);
+}
+
+button[onclick*="add('+')"],
+button[onclick*="add('-')"],
+button[onclick*="add('*')"],
+button[onclick*="add('/')"],
+button[onclick*="add('%')"] {
+    background: #8b5cf6;
+    color: white;
+}
+
+button[onclick*="add('+')"]:hover,
+button[onclick*="add('-')"]:hover,
+button[onclick*="add('*')"]:hover,
+button[onclick*="add('/')"]:hover,
+button[onclick*="add('%')"]:hover {
+    background: #6d28d9;
+}
+
+button[onclick="clearDisplay()"] {
+    background: #ef4444;
+    color: white;
+}
+
+button[onclick="deleteLast()"] {
+    background: #f97316;
+    color: white;
+}
+
+button[onclick="calculate()"] {
+    width: 120px;
+    background: #16a34a;
+    color: white;
+}
+
+button[onclick="calculate()"]:hover {
+    background: #15803d;
+}

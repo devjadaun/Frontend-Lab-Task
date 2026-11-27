@@ -1,0 +1,36 @@
+.header {
+  color: rgb(28, 58, 209);
+  padding: 20px;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgb(252, 251, 251);
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.card img {
+  width: 141px;
+  height: 106px;
+  align-items: center;
+  margin: 50px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.card:active{
+  background-color: #e2e2e2;
+}
